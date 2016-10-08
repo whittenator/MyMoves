@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		56297E4E1DA878ED00258A58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E4D1DA878ED00258A58 /* AppDelegate.swift */; };
-		56297E501DA878ED00258A58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E4F1DA878ED00258A58 /* ViewController.swift */; };
+		56297E501DA878ED00258A58 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E4F1DA878ED00258A58 /* SignInVC.swift */; };
 		56297E531DA878ED00258A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56297E511DA878ED00258A58 /* Main.storyboard */; };
 		56297E551DA878ED00258A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56297E541DA878ED00258A58 /* Assets.xcassets */; };
 		56297E581DA878ED00258A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56297E561DA878ED00258A58 /* LaunchScreen.storyboard */; };
+		56297E601DA8798A00258A58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56297E5F1DA8798A00258A58 /* GoogleService-Info.plist */; };
+		A37F759BC0BB1B34B79A3683 /* Pods_MyMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A14F3069FC42190635CA41 /* Pods_MyMoves.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56297E4A1DA878ED00258A58 /* MyMoves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMoves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56297E4D1DA878ED00258A58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		56297E4F1DA878ED00258A58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		56297E4F1DA878ED00258A58 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		56297E521DA878ED00258A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56297E541DA878ED00258A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56297E571DA878ED00258A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56297E591DA878ED00258A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56297E5F1DA8798A00258A58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		629E9BB867DB57F7E2F70D7A /* Pods-MyMoves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoves.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves.release.xcconfig"; sourceTree = "<group>"; };
+		71A14F3069FC42190635CA41 /* Pods_MyMoves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B652AF00C6F7085812009DC /* Pods-MyMoves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoves.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A37F759BC0BB1B34B79A3683 /* Pods_MyMoves.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		147F2109C6D90DFC77B087D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71A14F3069FC42190635CA41 /* Pods_MyMoves.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		56297E411DA878EC00258A58 = {
 			isa = PBXGroup;
 			children = (
 				56297E4C1DA878ED00258A58 /* MyMoves */,
 				56297E4B1DA878ED00258A58 /* Products */,
+				FF8331929C7672921E8430B0 /* Pods */,
+				147F2109C6D90DFC77B087D9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,48 @@
 		56297E4C1DA878ED00258A58 /* MyMoves */ = {
 			isa = PBXGroup;
 			children = (
+				56297E631DA87EF300258A58 /* Controller */,
+				56297E621DA87EEB00258A58 /* View */,
+				56297E611DA87EE300258A58 /* Model */,
 				56297E4D1DA878ED00258A58 /* AppDelegate.swift */,
-				56297E4F1DA878ED00258A58 /* ViewController.swift */,
 				56297E511DA878ED00258A58 /* Main.storyboard */,
 				56297E541DA878ED00258A58 /* Assets.xcassets */,
 				56297E561DA878ED00258A58 /* LaunchScreen.storyboard */,
 				56297E591DA878ED00258A58 /* Info.plist */,
+				56297E5F1DA8798A00258A58 /* GoogleService-Info.plist */,
 			);
 			path = MyMoves;
+			sourceTree = "<group>";
+		};
+		56297E611DA87EE300258A58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		56297E621DA87EEB00258A58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		56297E631DA87EF300258A58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				56297E4F1DA878ED00258A58 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FF8331929C7672921E8430B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B652AF00C6F7085812009DC /* Pods-MyMoves.debug.xcconfig */,
+				629E9BB867DB57F7E2F70D7A /* Pods-MyMoves.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 56297E5C1DA878ED00258A58 /* Build configuration list for PBXNativeTarget "MyMoves" */;
 			buildPhases = (
+				52415144E8FC70588A3940DD /* [CP] Check Pods Manifest.lock */,
 				56297E461DA878ED00258A58 /* Sources */,
 				56297E471DA878ED00258A58 /* Frameworks */,
 				56297E481DA878ED00258A58 /* Resources */,
+				370C16FCC4B15E08FBFFA78F /* [CP] Embed Pods Frameworks */,
+				CF39784E7A7FA8DE20C75D33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,18 +180,67 @@
 			files = (
 				56297E581DA878ED00258A58 /* LaunchScreen.storyboard in Resources */,
 				56297E551DA878ED00258A58 /* Assets.xcassets in Resources */,
+				56297E601DA8798A00258A58 /* GoogleService-Info.plist in Resources */,
 				56297E531DA878ED00258A58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		370C16FCC4B15E08FBFFA78F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52415144E8FC70588A3940DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF39784E7A7FA8DE20C75D33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		56297E461DA878ED00258A58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56297E501DA878ED00258A58 /* ViewController.swift in Sources */,
+				56297E501DA878ED00258A58 /* SignInVC.swift in Sources */,
 				56297E4E1DA878ED00258A58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		56297E5D1DA878ED00258A58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B652AF00C6F7085812009DC /* Pods-MyMoves.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PZ6TY2596;
@@ -272,6 +376,7 @@
 		};
 		56297E5E1DA878ED00258A58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629E9BB867DB57F7E2F70D7A /* Pods-MyMoves.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2PZ6TY2596;
@@ -302,6 +407,7 @@
 				56297E5E1DA878ED00258A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

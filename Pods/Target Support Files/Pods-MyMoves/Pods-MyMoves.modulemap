@@ -1,0 +1,6 @@
+framework module Pods_MyMoves {
+  umbrella header "Pods-MyMoves-umbrella.h"
+
+  export *
+  module * { export * }
+}
