@@ -21,9 +21,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8V-xf-WqB" customClass="FancyView" customModule="MyMoves" customModuleProvider="target">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyMoves-Lime" translatesAutoresizingMaskIntoConstraints="NO" id="Z4j-cV-uLF"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyMoves-LightBlue" translatesAutoresizingMaskIntoConstraints="NO" id="Z4j-cV-uLF"/>
                                 </subviews>
-                                <color key="backgroundColor" red="0.80392156862745101" green="0.86274509803921573" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Z4j-cV-uLF" firstAttribute="leading" secondItem="Q8V-xf-WqB" secondAttribute="leading" constant="57" id="J57-TH-AEW"/>
                                     <constraint firstItem="Z4j-cV-uLF" firstAttribute="centerX" secondItem="Q8V-xf-WqB" secondAttribute="centerX" id="K5J-zf-SNB"/>
@@ -35,11 +35,11 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you don't have an account already, one will be created for you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rk5-rm-etg">
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.61960784313725492" green="0.61568627450980395" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0039215686274509803" green="0.3411764705882353" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="rk5-rm-etg" firstAttribute="centerX" secondItem="Phh-HC-aOE" secondAttribute="centerX" id="OBp-I2-ooX"/>
                                     <constraint firstItem="rk5-rm-etg" firstAttribute="trailing" secondItem="Phh-HC-aOE" secondAttribute="trailingMargin" id="UCe-Bh-lHY"/>
@@ -53,6 +53,9 @@
                                     <constraint firstAttribute="height" constant="89" id="Gw4-Xu-4zZ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Facebook-logo2"/>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YxZ-RM-Zqf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9X-Ac-mWT">
                                 <constraints>
@@ -68,7 +71,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-U1-pBJ" customClass="FancyButton" customModule="MyMoves" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.75294117647058822" green="0.792156862745098" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="jGD-YO-XSf"/>
                                 </constraints>
@@ -116,6 +119,6 @@
     </scenes>
     <resources>
         <image name="Facebook-logo2" width="2000" height="2000"/>
-        <image name="MyMoves-Lime" width="493" height="187"/>
+        <image name="MyMoves-LightBlue" width="493" height="187"/>
     </resources>
 </document>
