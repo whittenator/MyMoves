@@ -68,7 +68,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEH-Dx-tke" customClass="FancyField" customModule="MyMoves" customModuleProvider="target">
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPD-U1-pBJ" customClass="FancyButton" customModule="MyMoves" customModuleProvider="target">
                                 <color key="backgroundColor" red="0.011764705882352941" green="0.66274509803921566" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -79,6 +79,9 @@
                                 <state key="normal" title="Sign In">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qcb-md-rBb"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUV-Gj-hIW" customClass="FancyField" customModule="MyMoves" customModuleProvider="target">
                                 <nil key="textColor"/>
@@ -111,6 +114,10 @@
                             <constraint firstItem="Q8V-xf-WqB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="tLs-NQ-6d8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="EUV-Gj-hIW" id="Hn0-qE-lEI"/>
+                        <outlet property="pwdField" destination="zEH-Dx-tke" id="TVn-mF-Pws"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
