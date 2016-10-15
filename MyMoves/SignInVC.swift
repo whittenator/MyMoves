@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     
@@ -19,13 +20,18 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if let _ = KeychainWrapper.stringForKey(KEY_UID) {
+            print("TRAVIS: ID found in keychain")
+            performSegue(withIdentifier: "goToProfile", sender: nil)
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     @IBAction func facebookBtnTapped(_ sender: AnyObject) {
         
@@ -53,6 +59,10 @@ class SignInVC: UIViewController {
                 
             } else {
                 print("TRAVIS: Successfully authenticated with Firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                    
+                }
             }
     })
   }
@@ -62,12 +72,16 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: {(user, error) in
                 if error == nil {
                     print("TRAVIS: Email user auth with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("TRAVIS: BIG EORROR-\(error)")
                         } else {
                             print ("TRAVIS: Successfully signed up with Firebase")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)                            }
                         }
                     })
                 }
@@ -75,4 +89,12 @@ class SignInVC: UIViewController {
         
         }
     }
+    
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.setString(id, forKey: KEY_UID)
+        print("TRAVIS: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToProfile", sender: nil)
+        
+    }
+    
 }

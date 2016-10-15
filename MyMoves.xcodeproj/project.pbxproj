@@ -18,6 +18,7 @@
 		56297E6A1DB004CD00258A58 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E691DB004CD00258A58 /* RoundButton.swift */; };
 		56297E6C1DB0068200258A58 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E6B1DB0068200258A58 /* FancyField.swift */; };
 		56297E6E1DB007EC00258A58 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E6D1DB007EC00258A58 /* FancyButton.swift */; };
+		56297E791DB0881800258A58 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56297E781DB0881800258A58 /* FeedVC.swift */; };
 		A37F759BC0BB1B34B79A3683 /* Pods_MyMoves.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A14F3069FC42190635CA41 /* Pods_MyMoves.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		56297E6B1DB0068200258A58 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		56297E6D1DB007EC00258A58 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		56297E6F1DB0617100258A58 /* MyMoves.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyMoves.entitlements; sourceTree = "<group>"; };
+		56297E781DB0881800258A58 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		629E9BB867DB57F7E2F70D7A /* Pods-MyMoves.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoves.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves.release.xcconfig"; sourceTree = "<group>"; };
 		71A14F3069FC42190635CA41 /* Pods_MyMoves.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyMoves.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B652AF00C6F7085812009DC /* Pods-MyMoves.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyMoves.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyMoves/Pods-MyMoves.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				56297E4F1DA878ED00258A58 /* SignInVC.swift */,
+				56297E781DB0881800258A58 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 					56297E491DA878ED00258A58 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 2PZ6TY2596;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -274,6 +278,7 @@
 				56297E501DA878ED00258A58 /* SignInVC.swift in Sources */,
 				56297E6A1DB004CD00258A58 /* RoundButton.swift in Sources */,
 				56297E6E1DB007EC00258A58 /* FancyButton.swift in Sources */,
+				56297E791DB0881800258A58 /* FeedVC.swift in Sources */,
 				56297E4E1DA878ED00258A58 /* AppDelegate.swift in Sources */,
 				56297E651DB0008200258A58 /* FancyView.swift in Sources */,
 				56297E681DB0014000258A58 /* Constants.swift in Sources */,
